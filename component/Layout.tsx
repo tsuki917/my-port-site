@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
+import animetion from '../styles/animationBack.module.css';
 interface layoutProps {
     children: React.ReactNode
 }
@@ -35,6 +36,13 @@ const Layout = (prop: layoutProps) => {
                     </div>
                 </div>
             </div>
+            <ul className="backmove">
+                <li></li><li></li>
+                <li></li><li></li>
+                <li></li><li></li>
+
+            </ul>
+
 
 
             <div>{prop.children}</div>
