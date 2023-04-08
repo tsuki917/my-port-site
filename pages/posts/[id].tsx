@@ -7,7 +7,6 @@ import styles from '../../styles/Home.module.css';
 
 const Post = ({ postData }: any) => {
   const splitedData = postData.split('---');
-  console.log(splitedData);
   return (
     <Layout>
       <div className={styles.container}>

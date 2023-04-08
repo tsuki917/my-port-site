@@ -5,7 +5,7 @@ const Question = () => {
     return (
         <Layout>
             <div className={styles.questionBoard}>
-                <h2>よくある質問</h2>
+                <h2>質問への解答</h2>
 
             </div>
             <form method="post" action="https://newt-713228.form.newt.so/v1/jvyD3q6Ah">

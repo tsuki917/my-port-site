@@ -9,11 +9,11 @@ interface layoutProps {
 
 const Layout = (prop: layoutProps) => {
     return (
-        <main>
+        <main className={styles.main}>
             <div className={styles.title}>
                 <h2 className={styles.titleHtwo}>tsukiの寝床(仮)</h2>
 
-                <div className={styles.menuContainer}>
+                <div className={styles.menuContainer }>
                     <div className={styles.menu}>
                         <Link href="/" legacyBehavior>
                             <a className={styles.link}>プロフィール</a>
@@ -36,12 +36,14 @@ const Layout = (prop: layoutProps) => {
                     </div>
                 </div>
             </div>
-            <ul className="backmove">
-                <li></li><li></li>
-                <li></li><li></li>
-                <li></li><li></li>
+            {/* <ul className={animetion.backAnimetion}>
+                <li className={animetion.backAnimetionli}></li>
+                <li className={animetion.backAnimetionli}></li>
+                <li className={animetion.backAnimetionli}></li>
+                <li className={animetion.backAnimetionli}></li>
 
-            </ul>
+
+            </ul> */}
 
 
 
