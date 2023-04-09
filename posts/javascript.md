@@ -37,4 +37,4 @@ description: 'javascriptを使ってきた1年を振り返ってみる'
 * anxios
 * cheerio
 * fs
-* express  
+* express 
