@@ -21,7 +21,8 @@
 .link {
   color: white;
   text-decoration-line: none;
-
+  border-right: 1px solid white;
+  padding-right: 10px;
 }
 
 .link:hover {
@@ -33,10 +34,10 @@
   position: absolute;
   display: flex;
   margin-right: 60%;
-  min-width: 500px;
+  min-width: 300px;
   justify-content: space-around;
   color: white;
-  left: 20px;
+  left: 5px;
   top: 50px;
 
 }
@@ -126,7 +127,7 @@
   font-size: 5px;
 }
 
-@media(min-width:900px) {
+@media(min-width:1280px) {
   .LinkTitle {
     font-size: small;
   }
@@ -137,6 +138,36 @@
 
   .LinkDesc {
     font-size: small;
+  }
+
+}
+
+@media(min-width:600px) {
+  .LinkTitle {
+    font-size: 10px;
+  }
+
+  .LinkDate {
+    font-size: 8px;
+  }
+
+  .LinkDesc {
+    font-size: 8px;
+  }
+
+}
+
+@media(min-width:480px) {
+  .LinkTitle {
+    font-size: 5px;
+  }
+
+  .LinkDate {
+    font-size: 5px;
+  }
+
+  .LinkDesc {
+    font-size: 5px;
   }
 
 }
@@ -187,6 +218,7 @@
 }
 
 .rootList {
+  padding-left: 5px;
   background-color: rgb(76, 76, 76);
   border-top: 1px solid white;
 }
