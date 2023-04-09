@@ -143,30 +143,30 @@
 
 @media(max-width:600px) {
   .LinkTitle {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 
   .LinkDate {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 
   .LinkDesc {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 
 }
 
 @media(max-width:480px) {
   .LinkTitle {
-    font-size: 0.3em;
+    font-size: 0.8em;
   }
 
   .LinkDate {
-    font-size: 0.3em;
+    font-size: 0.8em;
   }
 
   .LinkDesc {
-    font-size: 0.3em;
+    font-size: 0.8em;
   }
 
 }
