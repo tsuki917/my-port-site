@@ -63,6 +63,7 @@
   border: 1.5px solid black;
   border-radius: 5px;
   background-color: white;
+  font-size: 10px;
   width: 60%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -93,7 +94,6 @@
   left: 20px;
   color: black;
   font-weight: bold;
-  font-size: 5px;
 }
 
 .LinkTitle:visited {
@@ -108,7 +108,6 @@
   top: 10px;
   right: 20px;
   color: black;
-  font-size: 5px;
 }
 
 .LinkDate:visited {
@@ -122,52 +121,52 @@
   top: 60px;
   left: 30px;
   position: absolute;
-  font-size: 13px;
   color: rgb(10, 91, 212);
   font-size: 5px;
 }
 
-@media(min-width:1280px) {
+@media(max-width:1290px) {
   .LinkTitle {
-    font-size: small;
+    font-size: 1.2em;
   }
 
   .LinkDate {
-    font-size: smaller;
+    font-size: 1.2em;
   }
 
   .LinkDesc {
-    font-size: small;
+    font-size: 1.2em;
+  }
+
+
+}
+
+@media(max-width:600px) {
+  .LinkTitle {
+    font-size: 0.8em;
+  }
+
+  .LinkDate {
+    font-size: 0.8em;
+  }
+
+  .LinkDesc {
+    font-size: 0.8em;
   }
 
 }
 
-@media(min-width:600px) {
+@media(max-width:480px) {
   .LinkTitle {
-    font-size: 10px;
+    font-size: 0.3em;
   }
 
   .LinkDate {
-    font-size: 8px;
+    font-size: 0.3em;
   }
 
   .LinkDesc {
-    font-size: 8px;
-  }
-
-}
-
-@media(min-width:480px) {
-  .LinkTitle {
-    font-size: 5px;
-  }
-
-  .LinkDate {
-    font-size: 5px;
-  }
-
-  .LinkDesc {
-    font-size: 5px;
+    font-size: 0.3em;
   }
 
 }
