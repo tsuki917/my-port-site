@@ -1,9 +1,16 @@
 import Layout from "@/component/Layout";
 import styles from "../styles/Home.module.css"
+import Link from "next/link";
 const Question = () => {
 
     return (
         <Layout>
+            <div className={styles.rootList}>
+        <Link legacyBehavior href='/'><a className={styles.rootListText}>home</a></Link>
+
+        <Link legacyBehavior href='/question'><a className={styles.rootListText}>{'>'}質問</a></Link>
+        
+      </div>
             <div className={styles.questionBoard}>
                 <h2>質問への解答</h2>
 

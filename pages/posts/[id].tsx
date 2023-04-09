@@ -7,8 +7,15 @@ import styles from '../../styles/Home.module.css';
 
 const Post = ({ postData }: any) => {
   const splitedData = postData.split('---');
+  const splitedTitle = splitedData[1].split("'");
   return (
     <Layout>
+      <div className={styles.rootList}>
+        <Link legacyBehavior href='/'><a className={styles.rootListText}>home</a></Link>
+
+        <Link legacyBehavior href='/blogs'><a className={styles.rootListText}>{'>'}ブログ</a></Link>
+        <Link legacyBehavior href='/blogs'><a className={styles.rootListText}>{'>'}記事「{splitedTitle[1]}」</a></Link>
+      </div>
       <div className={styles.container}>
         <ReactMarkdown
           children={splitedData[2]}
@@ -17,7 +24,6 @@ const Post = ({ postData }: any) => {
           }}
         />
       </div>
-      <Link href="/blogs" className={styles.toBlogs}>to Blogs</Link>
     </Layout>
   );
 }

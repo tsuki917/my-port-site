@@ -1,22 +1,21 @@
 import React, { ReactNode } from "react";
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
-import animetion from '../styles/animationBack.module.css';
 interface layoutProps {
     children: React.ReactNode
 }
 
 
-const Layout = (prop: layoutProps) => {
+const Layout = (prop: layoutProps, parts: string) => {
     return (
         <main className={styles.main}>
             <div className={styles.title}>
                 <h2 className={styles.titleHtwo}>tsukiの寝床(仮)</h2>
 
-                <div className={styles.menuContainer }>
+                <div className={styles.menuContainer}>
                     <div className={styles.menu}>
                         <Link href="/" legacyBehavior>
-                            <a className={styles.link}>プロフィール</a>
+                            <a className={styles.link}>ホーム</a>
                         </Link>
                     </div>
                     <div className={styles.menu}>
@@ -36,15 +35,6 @@ const Layout = (prop: layoutProps) => {
                     </div>
                 </div>
             </div>
-            {/* <ul className={animetion.backAnimetion}>
-                <li className={animetion.backAnimetionli}></li>
-                <li className={animetion.backAnimetionli}></li>
-                <li className={animetion.backAnimetionli}></li>
-                <li className={animetion.backAnimetionli}></li>
-
-
-            </ul> */}
-
 
 
             <div>{prop.children}</div>

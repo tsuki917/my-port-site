@@ -2,8 +2,14 @@ body{
   margin: 0;
   padding:0;
   background-image:
-  url('../public/images/oBIn3qLxAVQ94at1680937839_1680937929.png')
+  url('../public/images/rQon4Gu5vaOiVr41680966952_1680967015.png')
   ;
+  width: 100%;
+  height: 100%;
 }
 
 
+*{
+  margin: 0;
+  padding:0;
+}

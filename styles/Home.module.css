@@ -1,116 +1,124 @@
-.title{
-  position: relative;
+.title {
   width: 100%;
-  margin: auto auto;
+  margin: 0;
   height: 100px;
   text-align: center;
-  border: 1px solid black;
   background-color: rgb(76, 76, 76);
   color: white;
 }
-.titleHtow{
-  margin:0 auto;
+
+.titleHtow {
+  margin: 0 auto;
   vertical-align: middle;
 }
 
-.menu{
+.menu {
   margin: 10px 0;
   font-size: 20px;
   /* justify-items: center; */
 }
-.link{
+
+.link {
   color: white;
   text-decoration-line: none;
-  
+
 }
-.link:hover{
+
+.link:hover {
   color: rgb(160, 159, 159);
   text-decoration-line: underline;
 }
-.menuContainer{
+
+.menuContainer {
   position: absolute;
   display: flex;
-  margin-right:60%;
+  margin-right: 60%;
   min-width: 500px;
   justify-content: space-around;
-  color : white;
-  left:20px;
-  top:60px;
+  color: white;
+  left: 20px;
+  top: 50px;
 
 }
-.img{
+
+.img {
   width: 80%;
-  margin:5px auto  ;
+  margin: 5px auto;
   border: 1px solid black;
   border-radius: 9999px;
-  width:140px;
-  height:140px;
+  width: 140px;
+  height: 140px;
 }
 
 .borderCircle {
   border-radius: 9999px;
 }
- 
-.profContent{
+
+.profContent {
   text-align: center;
 }
 
-.item{
+.item {
   border: 1.5px solid black;
   border-radius: 5px;
-  background-color:white;
+  background-color: white;
   width: 60%;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right :15%;
+  margin-right: 15%;
   margin-left: 5%;
   height: 100px;
   min-width: 300px;
   text-decoration: none;
   position: relative;
 }
-.container{
+
+.container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   background-color: antiquewhite;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right :15%;
+  margin-right: 15%;
   margin-left: 5%;
   min-height: 300px;
   padding: 40px;
 }
-.LinkTitle{
+
+.LinkTitle {
   position: absolute;
   top: 10px;
   left: 20px;
-  color:black;
+  color: black;
   font-weight: bold;
   font-size: 5px;
 }
 
-.LinkTitle:visited{
+.LinkTitle:visited {
   color: black;
   position: absolute;
   top: 10px;
   left: 20px;
 }
-.LinkDate{
+
+.LinkDate {
   position: absolute;
   top: 10px;
   right: 20px;
-  color:black;
+  color: black;
   font-size: 5px;
 }
-.LinkDate:visited{
+
+.LinkDate:visited {
   position: absolute;
   top: 10px;
   right: 20px;
   color: black;
 }
-.LinkDesc{
-  top:60px;
+
+.LinkDesc {
+  top: 60px;
   left: 30px;
   position: absolute;
   font-size: 13px;
@@ -118,54 +126,59 @@
   font-size: 5px;
 }
 
-@media(min-width:900px){
-  .LinkTitle{
+@media(min-width:900px) {
+  .LinkTitle {
     font-size: small;
   }
-  .LinkDate{
+
+  .LinkDate {
     font-size: smaller;
   }
-  .LinkDesc{
+
+  .LinkDesc {
     font-size: small;
   }
 
 }
 
-.blogTitle{
+.blogTitle {
   text-decoration: underline;
   margin: 5px;
 }
 
 
 
-.profBoard{
+.profBoard {
   background-color: antiquewhite;
   width: 60%;
   margin: 10px auto;
   padding: 10px;
 }
-.name{
+
+.name {
   margin-top: 2px;
   margin-bottom: 10px;
 }
 
-.toBlogs{
+.toBlogs {
   margin-left: 10px;
 }
-.questionBoard{
+
+.questionBoard {
   background-color: antiquewhite;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right :15%;
+  margin-right: 15%;
   margin-left: 5%;
   min-height: 300px;
   padding: 40px;
 }
-.input{
+
+.input {
   background-color: rgb(207, 207, 207);
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right :25%;
+  margin-right: 25%;
   margin-left: 15%;
   min-height: 200px;
   padding: 40px;
@@ -173,3 +186,13 @@
   border-radius: 10px;
 }
 
+.rootList {
+  background-color: rgb(76, 76, 76);
+  border-top: 1px solid white;
+}
+
+.rootListText {
+  color: white;
+  text-decoration-line: none;
+
+}
