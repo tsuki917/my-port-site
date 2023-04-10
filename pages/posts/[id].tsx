@@ -16,7 +16,7 @@ const Post = ({ postData }: any) => {
         <Link legacyBehavior href='/blogs'><a className={styles.rootListText}>{'>'}ブログ</a></Link>
         <Link legacyBehavior href='/blogs'><a className={styles.rootListText}>{'>'}記事「{splitedTitle[1]}」</a></Link>
       </div>
-      <div className={styles.container}>
+      <div className={styles.article}>
         <ReactMarkdown
           children={splitedData[2]}
           components={{
