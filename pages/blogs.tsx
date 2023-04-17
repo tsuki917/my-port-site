@@ -2,13 +2,15 @@ import Layout from "@/component/Layout";
 import { getSortedPostsData } from '@/libs/posts'
 import Link from "next/link";
 import styles from './../styles/Home.module.css';
+import { InferGetStaticPropsType, NextPage } from "next";
 interface postData {
     title: string;
     id: string;
     date: string;
     description: string;
 }
-const blogs = ({ allPostsData }: any) => {
+type postDataType = InferGetStaticPropsType<typeof getStaticProps>;
+const blogs : NextPage<postDataType> = ({ allPostsData }:postDataType) => {
     return (
         <Layout>
             <div className={styles.rootList}>
